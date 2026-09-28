@@ -1,0 +1,264 @@
+html, body {
+    min-height: 100vh; 
+    width: 100%;       
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    overflow-x: hidden; 
+}
+.top_header {
+    background-color: #001846;
+    height: 3.15vh;
+}
+
+header {
+    height: 12.5vh;
+    box-shadow: 0 1vh 1vh rgba(0, 0, 0, 0.3); 
+    z-index: 30;
+    width: 100%; 
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 6vh;
+    padding: 1.5vh;
+    padding-left: 3vh;
+    padding-right: 0;
+}
+
+.cabinet_image {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    height: 9vh;
+    display: flex;
+}
+
+nav span {
+    padding: 3.5vh 6.5vh;
+    font-size: 1.75vh;
+}
+
+nav span a {
+    color: #001846;
+    text-decoration: none;
+}
+
+
+
+
+main {
+    height: 75.15vh;
+    display: flex;
+}
+
+.button_section {
+    width: 20vw;
+}
+
+.button_section button {
+    width: 100%;
+    height: 25%;
+    font-size: 2.5vw;
+}
+
+button {
+    border-radius: 0;
+    border: 0.1vh #CBD862 solid;
+    background-color: #05386B;
+    color: #B9CF0C;
+}
+
+button:hover {
+    background-color: #CBD862;
+    color: #05386B;
+    cursor: pointer;
+}
+
+.main_content {
+    width: 60vw;
+    font-size: 1.75vw;
+    text-align: center;
+    padding: 1vh;
+    
+}
+
+.main_content_img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.main_content img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.main_information {
+    width: 20vw;
+    background-color: #CBD862;
+}
+
+.main_information {
+    padding: 2vh;
+    font-size: 2vh;
+}
+
+
+footer {
+    height: 12.35vh;
+    background-color: #CBD862;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_logo img {
+    height: 8vh;
+    padding: 1.5vh;
+    padding-left: 3vh;
+    padding-right: 0;
+}
+
+.footer_info {
+    display: flex;
+}
+
+.footer_info_text {
+    font-size: 2vh;
+    padding: 0.75vh;
+    padding-left: 1.5vh;
+    color: #001846;
+}
+
+.footer_img {
+    width: 1.9vh;
+}
+
+.footer_kontakti {
+    padding: 5.5vh 3vh;
+    font-size: 2vh;
+}
+
+.footer_kontakti span {
+    padding: 2vh;
+    color: #001846;
+}
+
+.footer_kontakti span a {
+    color: #001846;
+}
+
+@media (max-width: 1820px) {
+    nav span {
+        padding: 3.5vh 0.5vh;
+        font-size: 1.25vh;
+    } 
+    .footer_kontakti {
+        padding: 5.5vh 3vh;
+        font-size: 1.25vh;
+    }
+    .footer_kontakti span {
+        padding: 3.5vh 0.5vh;
+        font-size: 1.25vh;
+    }
+}
+
+@media (max-width: 912px) {
+    html, body {
+        min-height: 100vh; 
+    }
+
+    main {
+        flex-direction: column;
+        height: 100vh;        
+        box-sizing: border-box;
+    }
+
+    .button_section {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+        
+    }
+
+    .button_section button {
+        flex: 1;
+        height: 7.5vh;
+        padding: 0.5vh 0; 
+        font-size: 2vh;
+    }
+
+    .main_content {
+        width: 100%;
+        max-width: 100vw;
+        height: auto;
+        font-size: 1.75vw;
+        text-align: center;
+        padding: 1vh 1vw;
+        box-sizing: border-box;
+        flex: 1; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        padding: 1vh 2vw; 
+    }
+
+    .main_content h2 {
+        width: 100%;
+        font-size: 2.5vh;
+        margin-bottom: 1vh;
+    }
+
+    .main_content_img_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_content img {
+        width: 100%;
+        height: auto;
+        max-height: 40vh;
+        object-fit: contain;
+    }
+
+    .main_information {
+        width: 100%;
+        padding: 2vh 1vw; 
+        font-size: 2vh;
+        text-align: center;
+        background-color: #CBD862;
+        box-sizing: border-box;
+    }
+
+    .cabinet_image {
+        width: 100%;
+        height: 15vh; 
+        object-fit: cover;
+        margin-bottom: 1vh;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .footer_kontakti {
+        display: none;
+    }
+
+    .top_header {
+        width: 100%;
+        height: 3.15vh;
+    }
+}

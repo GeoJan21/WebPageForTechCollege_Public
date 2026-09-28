@@ -1,0 +1,2 @@
+img/cabinets/**/*.png
+!img/cabinets/**/none.png
